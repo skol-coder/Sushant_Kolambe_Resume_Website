@@ -1,0 +1,75 @@
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:larger;
+}
+#name{
+    font-size:xxx-large;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#top{   /*name with details*/
+    background-color: rgba(255, 254, 254, 0.384);
+    text-align: center;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 10px;
+}
+.details{   /*ph no and email*/
+    margin: 10px;
+    background-color: rgba(194, 194, 253, 0.205);
+    padding: .5%;
+    border-radius: 5px;  
+}
+a:link{     /*ph no and email links*/
+    color: rgb(255, 217, 0);
+}
+a:hover{
+    color: blue;
+}
+a:visited{
+    color: rgb(0, 255, 0)
+}
+.columns{   /*4columns education,skills,experience,intrests*/
+    background-color: rgba(92, 43, 226, 0.658);
+    padding: 1.5%;
+    font-family: sans-serif;
+    color: rgb(251, 255, 0);
+    float:left;
+    width: auto;
+    margin: 20px;
+    border-radius: 20px;
+}
+th{
+    text-align: left;
+    padding: 10px;
+}
+td{
+    padding: 10px;
+}
+.education{
+    float: left;
+    width: auto;
+    margin: 5px;
+}
+
+/*animations*/
+#name span:hover{
+    
+    color: blue;
+    font-size: 55px;
+}
+.columns:hover{
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+#top:hover{
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+@keyframes zoom{
+    0%  {}
+    50% {transform: scale(1.2);}
+    100%{}
+}
